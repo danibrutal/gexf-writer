@@ -26,5 +26,8 @@
     "gexf format",
     "graphs",
     "graphs visualization"
-  ]
+  ],
+  "scripts": {
+    "test": "mocha"
+  }
 }
