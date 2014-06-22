@@ -3,3 +3,4 @@ bower_components/
 *.sublime*
 build/*
 docs/
+npm-debug.log

@@ -1,6 +1,6 @@
 # JavaScript GEXF Writer 
 
-[![Build Status](https://secure.travis-ci.org/danibrutal/gexf-writer.png?branch=master)](http://travis-ci.org/danibrutal/gexf-writer)
+[![Build Status](https://travis-ci.org/danibrutal/gexf-writer.svg)](https://travis-ci.org/danibrutal/gexf-writer)
 
 # Installation
 

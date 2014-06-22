@@ -21,7 +21,7 @@ describe("GEXF-Writer", function(){
   });
 
   // Document
- describe("#writeNode()", function(){
+ describe("#getDocument()", function(){
 
      it("should return string", function(){
         var doc = gexfWriter.getDocument(); 
@@ -51,8 +51,6 @@ describe("GEXF-Writer", function(){
         var nodes = nodesParent[0].getElementsByTagName('node');
         assert.equal(nodes.length, 2);
 
-        console.log(gexfDoc);
-        
         var edgesParent = gexfTags[0].getElementsByTagName('edges');
         assert.equal(edgesParent.length, 1);
 
