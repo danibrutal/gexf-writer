@@ -1,7 +1,9 @@
 {
   "name": "gexf-writer",
+  "author": "Daniel Martinez",
   "version": "0.0.1",
   "description": "A simple GEXF format writer",
+  "homepage": "https://github.com/danibrutal/gexf-writer",
   "dependencies": {
     "requirejs": "^2.1.14",
     "xml-writer": "^1.4.1"
@@ -10,5 +12,15 @@
     "chai": "^1.9.1",
     "mocha": "^1.20.1",
     "xmldom": "^0.1.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/danibrutal/gexf-writer"
+  },
+  "bugs": {
+    "url": "https://github.com/danibrutal/gexf-writer/issues"
+  },
+  "keywords": [
+    "gexf", "gexf writer", "gexf format", "graphs", "graphs visualization"
+  ],
 }

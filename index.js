@@ -14,20 +14,4 @@ requirejs.config({
     nodeRequire: require
 });
 
-requirejs( 
-    ['express', 'lib/routes/Home', 'neo4j'], 
-    function(express, home, neo4j) {
-
-    var db    = new neo4j.GraphDatabase('http://localhost:7474');
-    
-    var app = express();
-
-    app.set('views', __dirname + '/lib/views');
-    app.set('view engine', 'ejs');
-    app.use(express.static(__dirname + '/lib/public'));
-
-    app.get( '/', home.index);
-
-    app.listen(3000);
-});
-
+module.exports = requirejs('lib/gexf-writer');
