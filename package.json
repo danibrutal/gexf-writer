@@ -1,0 +1,14 @@
+{
+  "name": "gexf-writer",
+  "version": "0.0.1",
+  "description": "A simple GEXF format writer",
+  "dependencies": {
+    "requirejs": "^2.1.14",
+    "xml-writer": "^1.4.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1",
+    "xmldom": "^0.1.19"
+  }
+}
