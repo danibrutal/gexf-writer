@@ -21,6 +21,10 @@
     "url": "https://github.com/danibrutal/gexf-writer/issues"
   },
   "keywords": [
-    "gexf", "gexf writer", "gexf format", "graphs", "graphs visualization"
-  ],
+    "gexf", 
+    "gexf writer",
+    "gexf format",
+    "graphs",
+    "graphs visualization"
+  ]
 }
