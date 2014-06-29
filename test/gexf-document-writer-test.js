@@ -16,8 +16,11 @@ describe("GEXF-Writer", function(){
   var gexfWriter;
 
   beforeEach( function(){ 
-    var graphType = 'directed';    
-    gexfWriter = new GexfWriter(graphType);
+    
+    gexfWriter = new GexfWriter({
+      type: 'directed'
+    });
+
   });
 
   // Document
@@ -37,6 +40,7 @@ describe("GEXF-Writer", function(){
         gexfWriter.writeEdge("1", 1, 2);  
 
         var gexfDoc = gexfWriter.getDocument();         
+        console.log(gexfDoc);
         var doc = new DOMParser().parseFromString(gexfDoc);
 
         var gexfTags = doc.getElementsByTagName('gexf');
@@ -44,6 +48,7 @@ describe("GEXF-Writer", function(){
 
         var graphTags = gexfTags[0].getElementsByTagName('graph');
         assert.equal(graphTags.length, 1);
+        assert.equal('directed', graphTags[0].getAttribute('defaultedgetype'));
 
         var nodesParent = gexfTags[0].getElementsByTagName('nodes');
         assert.equal(nodesParent.length, 1);
