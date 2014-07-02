@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/danibrutal/gexf-writer.svg)](https://travis-ci.org/danibrutal/gexf-writer)
 
+# Introduction
+A tool to write [GEXF](http://gexf.net/format/) documents in node.js 
+
 # Installation
 
 With [npm](http://npmjs.org) do:
@@ -51,8 +54,12 @@ Output:
    </meta>
    <graph defaultedgetype="directed">
       <attributes class="node" mode="static">
-         <attribute id="foo" type="string" />
-         <attribute id="bar" type="integer" />
+         <attribute id="foo" type="string">
+            <default>foo default values</default>
+         </attribute>
+         <attribute id="bar" type="integer">
+            <default>0</default>
+         </attribute>
       </attributes>
       <nodes>
          <node id="1" label="node label">
@@ -82,5 +89,5 @@ With [mocha](http://visionmedia.github.io/mocha) do:
 
 # License
 
-[MIT/X11](./LICENSE)
+MIT
 
