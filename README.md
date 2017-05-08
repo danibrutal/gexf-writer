@@ -83,7 +83,7 @@ Output:
 ```
 
 # Tests
-With [mocha](http://visionmedia.github.io/mocha) do:
+With [mocha](http://mochajs.org/) do:
 
     $ mocha
 
